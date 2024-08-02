@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="date-box"></div>
+        <div id="time-box"></div>
+        <div id="alarm-box">
+            <input type="time" id="alarmTime" value="00:00">
+            <button onclick="setAlarm()" id="setalarmbutton">Set Alarm</button>
+            <audio id="alarmAudio" src="alarm.mp3" preload="auto"></audio>        
+        </div>
+        <div id="stopclock_box">
+            
+            <button onclick="startstop()" id="startstopbutton">Start</button>
+            <div id="stopclock">00 : 00 : 00</div>
+            <button onclick="reset()" id="resetbutton">Reset</button>
+        </div>
+    </div> 
+</body>
+<script src="script.js"></script>
+</html>

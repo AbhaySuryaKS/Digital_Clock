@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Bruno Ace", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(135deg, #071952 10%, #088395 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(51, 255, 0);
+    font-size: 30px;
+}
+
+#container {
+    width: 80%;
+    width: 420px;
+    height: 220px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 6px ridge red;
+    box-shadow: 0 0 1px red, 0 0 5px red, 0 0 10px red, 0 0 20px red;
+    text-shadow: 0 0 2px green, 0 0 8px green;   
+}
+
+#date-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+
+#time-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+
+#alarm-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+
+#alarm-box input {
+    height: 100%;
+    background-color: black;
+    border: none;
+    color: #33ff00;
+    text-shadow: 0 0 2px green, 0 0 8px green; 
+    font-size: 30px;
+    outline: none;
+}
+
+#setalarmbutton {
+    background: #0066ff;
+}
+
+#setalarmbutton:active {
+    background-color: #63a2ff;
+}
+
+#stopclock_box {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+#resetbutton {
+    background-color: #0000ff;
+}
+
+#resetbutton:active {
+    background-color: #3232ff;
+}
+
+#startstopbutton {
+    background-color: #00ff00;
+}
+
+button {
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+@media screen and (max-width: 440px) {
+    body {
+        font-size: 20px;
+    }
+
+    #container {
+        width: 90%;
+        min-width: 320px;
+    }
+
+    button {
+        font-size: 10px;
+    }
+}
