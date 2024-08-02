@@ -95,5 +95,5 @@ function reset() {
     [hh, mm, ss] = [0, 0, 0];
     showcount.innerHTML = "00 : 00 : 00";
     clearInterval(countup);
-    countup = null;
+    startstop();
 }
