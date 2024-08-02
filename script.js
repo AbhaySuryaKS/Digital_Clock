@@ -94,6 +94,10 @@ function startstop() {
 function reset() {
     [hh, mm, ss] = [0, 0, 0];
     showcount.innerHTML = "00 : 00 : 00";
-    clearInterval(countup);
-    startstop();
+    if (countup !== null) {
+        clearInterval(countup);
+        countup = null;
+        document.getElementById("startstopbutton").textContent = "Start";
+        document.getElementById("startstopbutton").style.background = "green";
+    }
 }
