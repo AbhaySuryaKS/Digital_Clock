@@ -69,7 +69,7 @@ function count() {
     let m = mm >= 10 ? mm : "0" + mm;
     let h = hh >= 10 ? hh : "0" + hh;
     //display time
-    showcount.innerHTML = h + " : " + m + " : " + s;
+    showcount.innerHTML = h + ":" + m + ":" + s;
 }
 
 //functions for the buttons
@@ -93,7 +93,7 @@ function startstop() {
 //reset time
 function reset() {
     [hh, mm, ss] = [0, 0, 0];
-    showcount.innerHTML = "00 : 00 : 00";
+    showcount.innerHTML = "00:00:00";
     if (countup !== null) {
         clearInterval(countup);
         countup = null;
