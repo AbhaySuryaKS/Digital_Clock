@@ -67,4 +67,4 @@ The project consists of the following files:
 ## License
 
 This project is open-source and free to use.
-https://codepen.io/codemaster2301/pen/bGPqXNO
+https://codepen.io/AbhaySuryaKS/pen/bGPqXNO
